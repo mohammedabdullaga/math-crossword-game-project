@@ -66,7 +66,7 @@ __WHEN user clicks CLEAR button:__
 <br>
 <br>
 <br>
-### MATH CROSSWORD GAME V2 fetures:
+__MATH CROSSWORD GAME V2 fetures:__
 <br>
 - adding 2 levels to choose from ( hard , expert )
 <br>
