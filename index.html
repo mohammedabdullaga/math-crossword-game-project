@@ -8,9 +8,100 @@
     <script defer src="./js/app.js"></script>
 </head>
 <body>
-    <h1>Coming soon</h1>
-    <br>
-    <br>
-    <h1>Math CrossWord Game</h1> 
+    <header>
+        <h1>Welcome to CrossMaths Game</h1>
+        <p>Insert the correct number to solve the puzzle</p>
+    </header>
+    <div class="puzzle-container">
+        <div class="puzzle-grid">
+            <!-- row 1 -->
+            <div class="cell input-cell">
+                <input type="text" id="cell1" maxlength="2">
+            </div>
+            <div class="cell operator">+</div>
+            <div class="cell input-cell" id="cell2"></div>
+            <div class="cell operator">=</div>
+            <div class="cell number">6</div>
+
+            <!-- row 2 -->
+            <div class="cell operator">+</div>\
+            <!-- row 3 -->
+             <div class="cell number">3</div>
+            <div class="cell operator">+</div>
+            <div class="cell input-cell" id="cell3"></div>
+            <div class="cell operator">=</div>
+            <div class="cell input-cell">
+                <input type="text" id="cell4" maxlength="2">
+            </div>
+            <div class="cell input-cell">
+                <input type="text" id="cell5" maxlength="2">
+            </div>
+            <!-- row 4 -->
+            <div class="cell operator">=</div>
+            <div class="cell operator">+</div>
+            <div class="cell operator">+</div>
+
+            <!-- row 5 -->
+            <div class="cell number">5</div>
+            <div class="cell number">2</div>
+            <div class="cell operator">+</div>
+            <div class="cell number">3</div>
+            <div class="cell input-cell">
+                <input type="text" id="cell6" maxlength="2">
+            </div>
+
+            <!-- row 6 -->
+            <div class="cell operator">=</div>
+            <div class="cell operator">+</div>
+            <div class="cell operator">=</div>
+
+            <!-- row 7 -->
+             <div class="cell input-cell">
+                <input type="text" id="cell7" maxlength="2">
+             </div>
+             <div class="cell operator">+</div>
+                <div class="cell number">4</div>
+                <div class="cell operator">=</div>
+                <div class="cell number">7</div>
+                <div class="cell number">9</div>
+
+                <!-- row 8 -->
+                 <div class="cell operator">=</div>
+                 <!-- row 9 -->
+                  <div class="cell input-cell">
+                    <input type="text" id="cell8" maxlength="2">
+                  </div>
+                    <div class="cell operator">+</div>
+                    <div class="cell number">6</div>
+                    <div class="cell operator">=</div>
+        </div>
+        <!-- this is where the puzzle numbers will be displayed -->
+        <div class="number container">
+            <h3>Available numbers</h3>
+            <div class="numbers-bank" id="numbersbank"></div>
+            <!-- here i want to insert the numbers by js -->
+        </div>
+
+        <!-- here the game Buttons -->
+        <div class="controls">
+            <button id="playBtn" class="Btn play-Btn">Play now</button>
+            <button id="checkBtn" class="Btn check-Btn">Check Answers</button>
+            <button id="resetBtn" class="Btn check-Btn">Reset Puzzle</button>
+        </div>
+
+        <!-- Massage area below the controls buttons are much easier to read and to get the attention -->
+        <div class="message-container">
+            <div class="massage area" id="messageArea">
+                <p id="messageText">Welcome to CrossMaths! Click "Play now" to start the game.</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
 </body>
 </html>
