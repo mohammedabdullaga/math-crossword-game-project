@@ -8,9 +8,11 @@
     <script defer src="./js/app.js"></script>
 </head>
 <body>
+    <div class="container">
+
     <header>
-        <h1>Welcome to CrossMaths Game</h1>
-        <p>Insert the correct number to solve the puzzle</p>
+        <h1>Welcome to CrossMaths Game 🔢</h1>
+        <p class="subtitle">Insert the correct number to solve the puzzle</p>
     </header>
     <div class="puzzle-container">
         <div class="puzzle-grid">
@@ -22,9 +24,21 @@
             <div class="cell input-cell" id="cell2"></div>
             <div class="cell operator">=</div>
             <div class="cell number">6</div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
 
             <!-- row 2 -->
-            <div class="cell operator">+</div>\
+            <div class="cell operator">+</div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
             <!-- row 3 -->
              <div class="cell number">3</div>
             <div class="cell operator">+</div>
@@ -33,27 +47,46 @@
             <div class="cell input-cell">
                 <input type="text" id="cell4" maxlength="2">
             </div>
+            <div class="cell empty"></div>
             <div class="cell input-cell">
                 <input type="text" id="cell5" maxlength="2">
             </div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
             <!-- row 4 -->
             <div class="cell operator">=</div>
+            <div class="cell empty"></div>
             <div class="cell operator">+</div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
             <div class="cell operator">+</div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
 
             <!-- row 5 -->
             <div class="cell number">5</div>
+            <div class="cell empty"></div>
             <div class="cell number">2</div>
             <div class="cell operator">+</div>
             <div class="cell number">3</div>
+            <div class="cell operator"></div>
             <div class="cell input-cell">
                 <input type="text" id="cell6" maxlength="2">
             </div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
 
             <!-- row 6 -->
+             <div class="cell empty"></div>
+             <div class="cell empty"></div>
             <div class="cell operator">=</div>
+            <div class="cell empty"></div>
             <div class="cell operator">+</div>
+            <div class="cell empty"></div>
             <div class="cell operator">=</div>
+            <div class="cell empty"></div>
+            <div class="cell empty"></div>
 
             <!-- row 7 -->
              <div class="cell input-cell">
@@ -63,17 +96,33 @@
                 <div class="cell number">4</div>
                 <div class="cell operator">=</div>
                 <div class="cell number">7</div>
+                <div class="cell empty"></div>
                 <div class="cell number">9</div>
+                <div class="cell empty"></div>
+                <div class="cell empty"></div>
 
                 <!-- row 8 -->
+                 <div class="cell empty"></div>
+                 <div class="cell empty"></div>
+                 <div class="cell empty"></div>
+                 <div class="cell empty"></div>
                  <div class="cell operator">=</div>
+                 <div class="cell empty"></div>
+                 <div class="cell empty"></div>
+                 <div class="cell empty"></div>
+                 <div class="cell empty"></div>
                  <!-- row 9 -->
+                  <div class="cell empty"></div>
+                  <div class="cell empty"></div>
+                  <div class="cell empty"></div>
+                  <div class="cell empty"></div>
                   <div class="cell input-cell">
                     <input type="text" id="cell8" maxlength="2">
                   </div>
                     <div class="cell operator">+</div>
                     <div class="cell number">6</div>
                     <div class="cell operator">=</div>
+                    <div class="cell number">16</div>
         </div>
         <!-- this is where the puzzle numbers will be displayed -->
         <div class="number container">
@@ -102,6 +151,7 @@
 
 
 
+    </div>
     </div>
 </body>
 </html>
