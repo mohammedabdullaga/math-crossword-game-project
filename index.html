@@ -11,8 +11,8 @@
     <div class="container">
 
     <header>
-        <h1>Welcome to CrossMaths Game 🔢</h1>
-        <p class="subtitle">Insert the correct number to solve the puzzle</p>
+        <h1>Welcome to CrossMaths Game 🎮</h1>
+        <!-- <p class="subtitle">Insert the correct number to solve the puzzle</p> -->
     </header>
     <div class="puzzle-container">
         <div class="puzzle-grid">
@@ -21,7 +21,9 @@
                 <input type="text" id="cell1" maxlength="2">
             </div>
             <div class="cell operator">+</div>
-            <div class="cell input-cell" id="cell2"></div>
+            <div class="cell input-cell">
+                <input type="text" id="cell2" maxlength="2">
+            </div>
             <div class="cell operator">=</div>
             <div class="cell number">6</div>
             <div class="cell empty"></div>
@@ -42,7 +44,9 @@
             <!-- row 3 -->
              <div class="cell number">3</div>
             <div class="cell operator">+</div>
-            <div class="cell input-cell" id="cell3"></div>
+            <div class="cell input-cell">
+                <input type="text" id="cell3" maxlength="2">
+            </div>
             <div class="cell operator">=</div>
             <div class="cell input-cell">
                 <input type="text" id="cell4" maxlength="2">
@@ -70,7 +74,7 @@
             <div class="cell number">2</div>
             <div class="cell operator">+</div>
             <div class="cell number">3</div>
-            <div class="cell operator"></div>
+            <div class="cell operator">=</div>
             <div class="cell input-cell">
                 <input type="text" id="cell6" maxlength="2">
             </div>
@@ -125,32 +129,32 @@
                     <div class="cell number">16</div>
         </div>
         <!-- this is where the puzzle numbers will be displayed -->
-        <div class="number container">
-            <h3>Available numbers</h3>
-            <div class="numbers-bank" id="numbersbank"></div>
-            <!-- here i want to insert the numbers by js -->
-        </div>
-
-        <!-- here the game Buttons -->
+         <!-- here the game Buttons -->
         <div class="controls">
             <button id="playBtn" class="Btn play-Btn">Play now</button>
             <button id="checkBtn" class="Btn check-Btn">Check Answers</button>
-            <button id="resetBtn" class="Btn check-Btn">Reset Puzzle</button>
-        </div>
-
-        <!-- Massage area below the controls buttons are much easier to read and to get the attention -->
+            <button id="resetBtn" class="Btn reset-Btn">Reset Puzzle</button>
+         </div>
+         <!-- Massage area below the controls buttons are much easier to read and to get the attention -->
         <div class="message-container">
             <div class="massage area" id="messageArea">
-                <p id="messageText">Welcome to CrossMaths! Click "Play now" to start the game.</p>
+                <p id="messageText">Welcome to CrossMaths! Click "Play now" to start the game 🥳</p>
             </div>
         </div>
-
-
-
-
-
-
-
+        <div class="number container">
+    <h3>Available numbers</h3>
+    <div class="numbers-bank" id="numbersbank">
+        <!-- the numbers are static in the page -->
+        <div class="number-item" data-number="2">2</div>
+        <div class="number-item" data-number="2">2</div>
+        <div class="number-item" data-number="3">3</div>
+        <div class="number-item" data-number="4">4</div>
+        <div class="number-item" data-number="4">4</div>
+        <div class="number-item" data-number="5">5</div>
+        <div class="number-item" data-number="5">5</div>
+        <div class="number-item" data-number="10">10</div>
+    </div>
+</div>
     </div>
     </div>
 </body>

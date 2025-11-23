@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(90, 210, 226);
+    padding: 8px;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    color: white;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.puzzle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    align-items: center;
+}
+
+.puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 38px);
+    grid-template-rows: repeat(9, 38px);
+    gap: 2px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #333;
+    /* justify-self: center; */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #333;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.cell.empty {
+    background: #c2c1c1;
+    opacity: 0.4;
+    border: none;
+}
+
+.cell.input-cell {
+    border: 2px solid #666;
+    backg1ound: white;
+}
+
+.cell.input-cell:hover {
+    background: #f0f8ff;
+    border-color: #2196F3;
+    transform: scale(1.05);
+}
+
+.cell.input-cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.cell.number {
+    background: #fff9c4;
+    border: 2px solid #666;
+    color: #333;
+    font-size: 16px;
+}
+
+.cell.operator {
+    background: #fff9c4;
+    border: 2px solid #666;
+    color: #333;
+    font-size: 16px;
+}
+
+.number.container {
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid #333;
+    margin: 5px 0;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.number.container h3 {
+    color: #333;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.numbers-bank {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 3px;
+    padding: 3px;
+}
+
+.number-item {
+    background: #4caf50;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #388e3c;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-item:hover {
+    background: #45a049;
+    transform: translateY(-1px);
+}
+
+.number-item.selected {
+    background: #ffeb3b;
+    border-color: #ffc107;
+    color: #333;
+    transform: scale(1.03);
+}
+
+.number-item.used {
+    background: #cccccc;
+    border-color: #999999;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.Btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.play-Btn { 
+    background: #28a745;
+    color: white;
+}
+
+.check-Btn {
+    background: #007bff;
+    color: white;
+}
+
+.reset-Btn {
+    background: #dc3545;
+    color: white;
+}
+
+.Btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.message-container {
+    text-align: center;
+}
+
+.massage.area {
+    background: #e7f3ffa4;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #b3d9ff;
+}
+
+#messageText {
+    color: #004085;
+    font-weight: 500;
+}

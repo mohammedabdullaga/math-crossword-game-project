@@ -29,20 +29,7 @@
   <br>
  - SHOW available numbers
 
-__WHEN user types in input:__
-<br>
-  - IF input is a number:
-  <br>
-    MARK that number as used in number bank
-    <br>
-  - ELSE :
-  <br>
-    CLEAR input
 
-__WHEN user deletes number from input:__
-<br>
-  - MAKE that number available again
-  <br>
 
 __WHEN user inserting all the numbers:__
 <br>
