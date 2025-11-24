@@ -11,7 +11,11 @@ const correct_anwers = {
 }
 /*------------------------ Cached Element References ------------------------*/
 let playBtn, checkBtn, resetBtn, numbersBank, inputCells, messageText
+
+const winSound = new Audio("./assets/crowd-cheer.mp3")
+const loseSound = new Audio("./assets/losing.wav")
 /*-------------------------------- Functions --------------------------------*/
+
 function init() {
     playBtn = document.getElementById('playBtn')
     checkBtn = document.getElementById('checkBtn')
@@ -24,6 +28,9 @@ function init() {
     resetBtn.addEventListener('click', startGame)
     checkBtn.addEventListener('click', checkAnswers)
     disableGame()
+
+    winSound.volume = 0.3
+    loseSound.volume = 0.3
 }
 
 function disableGame() {
@@ -67,9 +74,11 @@ function checkAnswers() {
     
     if (allCorrect) {
         messageText.textContent = '🏆 You Win! All answers are correct!'
+        winSound.play()
     }
     else {
     messageText.textContent = '🫨 Some answers are not correct, try again'
+    loseSound.play()
     }
 }
 
