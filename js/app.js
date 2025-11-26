@@ -7,7 +7,9 @@ const correct_anwers = {
     'cell5' : 4,
     'cell6' : 5,
     'cell7' : 3,
-    'cell8' : 10
+    'cell8' : 10,
+    'cell9' : 3,
+    'cell10' : 7
 }
 /*------------------------ Cached Element References ------------------------*/
 let playBtn, checkBtn, resetBtn, numbersBank, inputCells, messageText
